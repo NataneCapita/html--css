@@ -1,0 +1,104 @@
+<!DOCTYPE html> 
+<html lang="PT'pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gruping Tags em HTML5</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color:dimgray;
+        
+        }
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        nav{
+        background-color:green;
+        padding: 3px;
+        box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.523);
+        
+    }
+        nav > a{
+            text-decoration: dashed;
+            color: rgb(243, 237, 237);
+            font-weight: bold;
+            margin-right: 30px;
+        }
+        nav > :hover{
+            text-decoration: underline;
+
+        }
+        main{
+            background-color:black;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 20px 0px;
+            
+        }
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            margin: opx;
+            padding: 4px;
+        }
+        footer > p{
+            margin: 0px;
+        }
+        article{
+            background-color: lightblue
+            ;
+            padding: 5px;
+        }
+        article > aside{
+            background-color:blue ;
+            color: white;
+        }
+         div#bola{
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 50%;
+         }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+         <a href=""></a>
+         <a href="">link</a> 
+         <a href="">link</a> 
+         <a href="">link</a> 
+         <a href="">link</a> 
+        </nav>
+    </header>
+    <main>
+        <section id="noticias">
+            <article>
+              <h1>Noticia sobre Angola</h1>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod quas hic in ad nam maiores. Suscipit, nulla animi, rem voluptatibus accusamus quisquam placeat deserunt repudiandae distinctio assumenda harum neque velit.</p>
+         
+            <aside>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum eos vero repudiandae fuga repellat cupiditate quis at numquam accusantium recusandae. Exercitationem nesciunt minus eum eos quaerat voluptates veniam delectus consequuntur?
+              </p>
+            </aside>
+        </article>
+        </section>
+    </main>
+    
+
+      <footer>
+        Desenvolvido pelo curso curso em video
+    </footer>
+
+    <div id="bola"></div>
+
+</body>
+</html>
