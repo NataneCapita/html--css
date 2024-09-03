@@ -3,24 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>mudando tamnhao das imagens</title>
+    <title>fundo fixo da Tela</title>
     <style>
         body{
             height: 100vh;
+           /*
             background-color: black;
             background-image: url(Imagens/wallpaper002.jpg);
             background-position: center center;
             background-repeat: no-repeat ;
             background-size: cover;
-            
+            background-attachment: fixed;*/
+            /*shorthands bacground
+            usa nessa ordem: color> image> position > repeat> [size] > attachment;
+            */
+            background: black url('Imagens/wallpaper002.jpg') center center no-repeat fixed;
         }
         main{
             background-color: white;
-            width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
             border-radius:15px;
+            max-width: 400px;
+
 
 
         }
@@ -32,7 +38,8 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor laboriosam dolore repellendus id beatae corporis quo aliquid culpa excepturi est similique a magni dolorum ex, maiores perferendis tenetur aspernatur. Vitae? Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, ea! Quasi ullam quaerat nemo tempore accusantium voluptate sit iste mollitia, ipsa iusto earum soluta incidunt, harum, officia alias non Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto dolorum rem a repudiandae! Odit sapiente dolorem, perferendis vitae ipsa illo rem sint dolores nihil necessitatibus adipisci, exercitationem, repellat obcaecati nemo.
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia eaque dolor, illo non unde et distinctio error. Consequatur quod saepe cum ipsa illum dolorem reprehenderit sapiente ex blanditiis, sit error? Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, dicta perspiciatis quam ab enim, nesciunt commodi dignissimos consectetur, ratione maiores deleniti fugiat adipisci nobis rerum beatae? Omnis architecto in cum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, modi inventore? Porro recusandae incidunt rerum at perferendis, nostrum cupiditate? Sapiente officiis facere modi odit dignissimos molestias harum recusandae beatae fuga.
         </p>
-       
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea accusamus repellendus aliquid illum! Quod sunt dolores quidem nemo temporibus nesciunt facilis esse! Sint, iste placeat nisi reprehenderit quisquam beatae dolorem.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod provident fugiat officia ex eius saepe. Obcaecati excepturi, officia at iste mollitia atque adipisci a aspernatur fugiat aperiam qui enim amet!</p>   
     </main>
 </body>
 </html>
