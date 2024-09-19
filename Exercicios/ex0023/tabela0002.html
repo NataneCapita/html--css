@@ -7,7 +7,8 @@
     <style>
         table{
             width: 500px; 
-            border-collapse: collapse;   
+            border-collapse: collapse;
+            position: relative;
         }
         td,th{
             border: 1px solid black;
@@ -16,23 +17,57 @@
         thead{
             background-color: rgb(217, 211, 211);
         }
+        /* usamos quando temos muitas colunas, efeito fixar ou grudar
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: lightgray;
+        }*/
         td.pais{
-            color: cornflowerblue;
+            color: rgb(20, 93, 230);
+        }
+        td.censo{
+            text-align: right;
+        }
+        tbody > tr:nth-child(even) {
+            background-color: lightgray;
+            
+
+        }
+        caption{
+            font-size: 1.5em;
+            padding: 10px;
+            font-weight: bold;
+            background-color:darkgrey ;
         }
         tfoot{
            width: 500px; 
            border: 1px solid black;
+           background-color: chocolate;
         }
     </style>
 </head>
 <body>
+   <h1>Uso de tabelas grandes</h1>
+    <!--
+    Anatomia para tabelas grandes
+    TABLE 
+      CAPTION
+      THEAD
+        tr-linhas td-dados th-titulo 
+      TBODY
+        tr td th 
+      TFOOT 
+        tr td  th
+-->
    <table>
+    <CAption>Uso de tabelas grandes</CAption>
     <thead>
-        <th>Posiçao</th>
-        <th>País</th>
-        <th>Estimativa da ONU</th>
-        <th>Crescimento desde a última Estimativa</th>
-        <th>Estimativa Oficial</th>
+        <th scope="col">Posiçao</th>
+        <th scope="col">País</th>
+        <th scop>Estimativa da ONU</th>
+        <th scop>Crescimento desde a última Estimativa</th>
+        <th scope="col">Estimativa Oficial</th>
     </thead>
     <tbody>
         <tr>
@@ -40,35 +75,35 @@
             <td class="pais">India</td>
             <td>1 429 921 746</td>
             <td>+269.108.746	</td>
-            <td><a href="ttps://www.indiastat.com/Home/Popclockflash"></a>Estimativa Oficial</td> 
+            <td class="censo"><a href="ttps://www.indiastat.com/Home/Popclockflash"></a>Estimativa Oficial</td> 
         </tr>
         <tr>
             <td>2</td>
             <td class="pais">China</td>
             <td>1 426 391 281</td>
             <td>+87.778.313</td>
-            <td> <a href="https://www.stats.gov.cn/english/PressRelease/202105/t20210510_1817185.html"></a>Censo Oficial</td>
+            <td class="censo"> <a href="https://www.stats.gov.cn/english/PressRelease/202105/t20210510_1817185.html"></a>Censo Oficial</td>
         </tr>
         <tr>
             <td>3</td>
             <td class="pais">Estados Unidos</td>
             <td>339 987 103</td>
             <td>+31.241.565</td>
-            <td>Censo oficial</td>
+            <td class="Censo">Censo oficial</td>
         </tr>
         <tr>
             <td>4</td>
             <td class="pais">Indonésia</td>
             <td>277 184 719</td>
             <td>+33.168.546</td>
-            <td>Estimativa Oficial</td> 
+            <td class="Censo">Estimativa Oficial</td> 
         </tr>
         <tr>
             <td>5</td>
             <td class="pais">Paquistao</td>
             <td>240 215 932</td>
             <td>+65.636.932</td>
-            <td>Estimativa Oficial</td>
+            <td class="Censo">Estimativa Oficial</td>
         </tr>
         <tr>
             <td>6</td>
@@ -82,32 +117,41 @@
             <td class="pais">Brasil</td>
             <td>212 583 750</td>
             <td>+12.348.062</td>
-            <td>Censo Oficial</td>
+            <td class="Censo">Censo Oficial</td>
          </tr>
          <tr>
             <td>8</td>
             <td class="pais">Banglades</td>
             <td>172 452 382	</td>
             <td>+10.231.620</td>
-            <td>Estimativa Oficial</td>
+            <td class="censo">Estimativa Oficial</td>
          </tr>
          <tr>
             <td>9</td>
             <td class="pais">Rússia</td>
             <td>146 140 931</td>
             <td>+5.267.284</td>
-            <td>Estimativa Oficial</td>
+            <td class="Censo">Estimativa Oficial</td>
          </tr>
          <tr>
             <td>10</td>
             <td class="pais">México</td>
             <td>134 127 189</td>
             <td>+21.594.789</td>
-            <td>Estima oficial</td>
+            <td class="Censo">Estima oficial</td>
          </tr>
     </tbody>
     <tfoot>
-       feito por 
+      <tr>
+        <th scope="row"><strong>Total</strong></th>
+        <th scope="row">
+            Populacao 
+        </th>
+       <td>2.961.828.515</td>
+       <td>599.322.061</td>
+       <td>3.561.150.517</td>
+
+      </tr>
     </tfoot>
    </table> 
 </body>
