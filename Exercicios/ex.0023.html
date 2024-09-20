@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt'pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=table, initial-scale=1.0">
+    <title>Exercicio de Tabelas</title>
+    <style>
+        body{
+            font-family: 'Times New Roman', Times, serif;
+        }
+       table{
+            border-collapse: collapse;
+            width: 300px;
+              
+        }
+        th,td{
+            border: 1px solid black; 
+            padding: 5px;
+        }
+        .cnome{
+            background-color: rgb(13, 232, 75);
+        }
+        .csexo{
+            background-color: rgb(216, 41, 41);
+        }
+        .cgroup{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption><strong>Cadastro</strong></caption>
+        <thead>
+            <colgroup>
+                <col class="cnome">
+                <col class="csexo">
+                <col class="cgroup" span="2">
+                <col class="Prof">
+            </colgroup>
+            <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">Sexo</th>
+                <th scope="col">Idade</th>
+                <th scope="col">Profissao</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>Ana Maria</td>
+                 <td>F</td>
+                 <td>25</td>
+                 <td>Enfermeira</td>
+            </tr>
+            <tr>
+                <td>Carla suza</td>
+                <td>F</td>
+                <td>18</td>
+                <td>Analista</td>
+            </tr>
+           <tr>
+            <td> Joia suza</td>
+            <td>F</td>
+            <td>16</td>
+            <td>Enfermeira</td>
+           </tr>
+           <tr>
+            <td>Meury suza</td>
+            <td>F</td>
+            <td>17</td>
+            <td>Enfermeira</td>
+           </tr>
+           <tr>
+            <td>Andre Savo</td>
+            <td>M</td>
+            <td>24</td>
+            <td>Electrecista</td>
+           </tr>
+           <tr>
+            <td>Natane Capita</td>
+            <td>M</td>
+            <td>27</td>
+            <td>Programador</td>
+           </tr>
+        </tbody>
+    </table>
+</body>
+</html>
