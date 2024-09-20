@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafios</title>
+    <style>
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 1em;
+        }
+        table{
+            width: 300px;
+            border-collapse: collapse;
+            
+        }
+        td,th{
+            border: 1px solid black;
+            padding: 10px;
+
+        }
+        th{
+            padding: 5px;
+        }
+        thead{background-color: darkgray;}
+        td.cormedia{
+            background-color: darkgrey;
+        }
+        caption{
+            font-weight: bold;
+            padding: 5px;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 2em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabela 005</h1>
+    <table>
+        <thead>
+            <caption>
+                PAUTA FINAL
+            </caption>
+            <tr>
+                <th rowspan="2"scope="col">Areas</th>
+                <th rowspan="2" scope="col">Disciplinas</th>
+                <th colspan="2"scope="col">Notas</th>
+                <th rowspan="2"scope="col">MediaS</th>
+            </tr>
+            <tr>
+                <th>Nota 1</th>
+                <th>Nota 2</th>
+            </tr>
+                     
+           
+           
+        </thead>
+        <tbody>
+            <tr>
+                    <td rowspan="3"scope="rowgroup"><strong>Exatas</strong></td>
+                <td>Matematica</td>
+                <td>10</td>
+                <td>10</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>Fisica</td>
+                <td>20</td>
+                <td>10</td>
+                <td>15</td>
+            </tr>
+            <tr>
+                <td>Quimica</td>
+                <td>15</td>
+                <td>15</td>
+                <td>15</td>
+            </tr>
+            <tr>
+                <td class="cormedia" colspan="4"><strong>Media das Exatas</strong></td>
+                <td class="cormedia" >13,5</td>
+            </tr>
+            <tr>
+                <td rowspan="3"scope="rowgroup"><strong>Humanas</strong></td>
+                <td>Biologia</td>
+                <td>20</td>
+                <td>20</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>Psicologia</td>
+                <td>18</td>
+                <td>18</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <Td>Historia</Td>
+                <td>15</td>
+                <td>15</td>
+                <td>15</td>
+            </tr>
+            <tr>
+                <td class="cormedia" colspan="4"><strong>Media das Humanas</strong></td>
+                <td class="cormedia">17,5</td>
+            </tr>
+
+        </tbody>
+        <tfoot>
+
+        </tfoot>
+    </table>
+    
+</body>
+</html>
